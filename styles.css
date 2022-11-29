@@ -1,0 +1,46 @@
+/*  
+
+    selector {
+        property: value;
+        property: value;
+        property: value;
+    }
+
+
+    tagname -> select all tags of a given type
+    classname -> select all tags that have a given clsss
+    tagname.classname -> select ONLY tags that are ALSO a given class
+
+    > -> child symbol
+
+    tagname>tagname -> select children of a given type
+    .classname>tagname -> select children of a given type
+    tagname>.classname -> select children of a given class
+    .classname.tagname -> select children of a given class.
+*/
+
+.nav {
+    border-style: dotted ;
+
+    width: 10%;
+    margin: auto;
+
+    list-style: none;
+    padding-left: 0;
+
+    text-align: center;
+    background-color: black;
+}
+
+.nav>li {
+    border: ridge;
+    display: inline-block;
+}
+
+.nav>li>a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+
+
